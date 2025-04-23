@@ -1,45 +1,190 @@
-<!--
-  Hit RUN to see this project in action!
-  
-  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
--->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Responsive Moderno</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<!DOCTYPE html>
-<html>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">JuanCaTechnology</div>
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+        </li>
+        <li class="has-submenu">
+          <a href="#servicios" class="submenu-toggle"
+            ><i class="fas fa-cogs"></i> Servicio Tecnico ▾</a
+          >
+          <ul class="submenu">
+            <li>
+              <a href="#"><i class="fas fa-tools"></i> Reparación PC</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-mobile-alt"></i> Celulares</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-laptop-code"></i> Software</a>
+            </li>
+          </ul>
+          <li class="has-submenu">
+            <a href="#" class="submenu-toggle"
+              ><i class="fas fa-cogs"></i> Redes Sociales ▾</a
+            >
+            <ul class="submenu">
+              <li>
+                <a href="#https://www.facebook.com/juancarlos.lopezaunta/"><i class="fas fa-tools"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#https://www.instagram.com/el_jaguar_de_america/"><i class="fas fa-mobile-alt"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#https://www.youtube.com/@juancatechnology8283"><i class="fas fa-laptop-code"></i> Youtube</a>
+              </li>
+            </ul>
+          </li>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-users"></i> Nosotros</a>
+        </li>
+        <li>
+          <a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <!--seccion principal-->
+           <main>
+                <section id="inicio">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+                    <h2>Bienvenido a Nuestro Servicio Técnico</h2>
+                <p>En <strong>Servicio Técnico de Sistemas</strong>, nos dedicamos a ofrecer soluciones de calidad 
+                    para todas sus necesidades tecnológicas. Nuestro equipo de expertos está listo para ayudarlo 
+                    con mantenimiento, reparación y optimización de sistemas informáticos.</p>
+                <p>Ya sea que necesite asistencia con su computadora personal, servidores, redes o cualquier 
+                    otro equipo tecnológico, estamos aquí para asegurarnos de que todo funcione sin problemas.</p>
+                <p>Nuestra misión es proporcionar un servicio rápido, confiable y a precios competitivos. 
+                    Confíe en nosotros para mantener sus sistemas funcionando al máximo rendimiento.</p>
+            </section>
 
-<body>
-  <main>
-    <h1 class="title">Welcome to HTML on Replit!</h1>
-    <p class="description">Get started by editing
-      <code class="code">index.html</code>. The webview will auto-refresh as you edit! (See <code
-        class="code">README.md</code> if you want to
-      disable auto-refresh.)
-    </p>
 
-    <section class="grid">
-      <a href="https://replit.com/learn" class='card'>
-        <h2>Learn &rarr;</h2>
-        <p>Find tutorials on Replit to learn more.</p>
-      </a>
+                <section id="servicios">
+                    <h2>Servicios</h2>
+                     <div class="servicio">
+                        <h3>Mantenimiento de Computadoras</h3>
+                        <p>Ofrecemos mantenimiento preventivo y correctivo para computadoras de escritorio y laptops, asegurando un rendimiento óptimo y prolongando la vida útil de sus equipos.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Reparación de Hardware</h3>
+                        <p>Reparamos componentes de hardware dañados o defectuosos, incluyendo discos duros, tarjetas madre, fuentes de poder y más.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Instalación de Software</h3>
+                        <p>Instalamos y configuramos todo tipo de software, desde sistemas operativos hasta aplicaciones especializadas, garantizando su correcto funcionamiento.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Seguridad Informática</h3>
+                        <p>Implementamos soluciones de seguridad para proteger sus datos y sistemas contra amenazas cibernéticas, incluyendo antivirus, firewalls y copias de seguridad.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Redes y Conectividad</h3>
+                        <p>Diseñamos, instalamos y mantenemos redes informáticas, asegurando una conectividad eficiente y segura en su hogar o empresa.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Asesoría y Consultoría</h3>
+                        <p>Brindamos asesoría y consultoría en tecnología, ayudándolo a elegir las mejores soluciones y estrategias para sus necesidades específicas.</p>
+                    </div>
+                </section>
 
-      <a href="https://docs.replit.com/category/deployments" class='card'>
-        <h2>Deploy &rarr;</h2>
-        <p>
-          After you are happy with this app, deploy it on Replit!
-        </p>
-      </a>
-    </section>
-  </main>
+                <section id="diseño">
+                    <h2>Bienvenido a Nuestro Servicio de Diseño Web</h2>
+                    <p>En <strong>Diseño Web Profesional</strong>, nos especializamos en crear páginas web y landing pages atractivas y funcionales. Nuestro objetivo es ayudar a tu negocio a destacar en línea con soluciones personalizadas y efectivas.</p>
+                    <p>Ya sea que necesites una página web completa, una landing page específica para una campaña, o mejoras en tu sitio actual, estamos aquí para brindarte el mejor servicio.</p>
+                    <p>Nuestro equipo combina creatividad y tecnología para ofrecer resultados que superen tus expectativas.</p>
 
-  <script type="module" src="script.js"></script>
+                 <section id="servicios">
+                    <h2>Servicios</h2>
+                    <div class="servicio">
+                        <h3>Diseño de Páginas Web</h3>
+                        <p>Diseñamos y desarrollamos páginas web personalizadas que reflejan la identidad de tu marca y cumplen con los objetivos de tu negocio. Nos aseguramos de que tu sitio sea visualmente atractivo, fácil de navegar y optimizado para SEO.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Creación de Landing Pages</h3>
+                        <p>Desarrollamos landing pages efectivas que convierten visitantes en clientes. Nuestras landing pages están diseñadas para capturar la atención, generar interés y motivar a la acción, utilizando técnicas de optimización de conversiones (CRO).</p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Diseño Responsivo</h3>
+                        <p>Aseguramos que tu página web o landing page se vea y funcione perfectamente en todos los dispositivos, desde computadoras de escritorio hasta smartphones. Nuestro diseño responsivo garantiza una experiencia de usuario fluida y consistente.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Optimización para Motores de Búsqueda (SEO)</h3>
+                        <p>Implementamos técnicas de SEO para mejorar la visibilidad de tu sitio web en los motores de búsqueda, ayudando a atraer más tráfico orgánico y aumentar tus oportunidades de negocio.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Integración con Herramientas de Marketing</h3>
+                        <p>Integramos tu página web o landing page con herramientas de marketing como Google Analytics, MailChimp, y sistemas CRM para maximizar el impacto de tus campañas y mejorar la gestión de clientes.</p>
+                    </div>
+                    <div class="servicio">
+                        <h3>Mantenimiento y Actualización</h3>
+                        <p>Ofrecemos servicios de mantenimiento y actualización para asegurar que tu sitio web siempre esté actualizado, seguro y funcionando correctamente. Nos ocupamos de todas las tareas técnicas para que puedas concentrarte en tu negocio.</p>
+                    </div>
+                </section>
+                </section>
 
-</body>
+                <section id="contacto">
+                    <h2>contacto</h2>
+                    <p>Informacion de contacto</p>
 
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+
+                </section>
+           </main>
+
+           <!--pie de pagina-->
+
+           <footer>
+            <p>&copy; 2025 Servicio Técnico de Sistemas</p>
+        </footer>
+    </div>
+    
+  </body>
 </html>
